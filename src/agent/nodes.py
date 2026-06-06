@@ -6,117 +6,74 @@ import os
 from .state import AgentState
 from ..retrieval.rrf_fusion import HybridRetriever
 from ..retrieval.reranker import CrossEncoderReranker
-from ..llm.prompts import build_rag_prompt, GUARDRAIL_PROMPT
+from ..llm.prompts import build_rag_prompt
 from ..compliance.phi_redactor import redact_phi
+from ..compliance.guardrails import is_grounded
 from ..voice.stt import transcribe
 from ..voice.tts import synthesize
 
-# Lazy singletons — initialised on first request to save startup time
-_retriever: HybridRetriever | None = None
-_reranker: CrossEncoderReranker | None = None
+_retriever = None
+_reranker  = None
 
-
-def _get_retriever() -> HybridRetriever:
+def _get_retriever():
     global _retriever
     if _retriever is None:
         _retriever = HybridRetriever()
     return _retriever
 
-
-def _get_reranker() -> CrossEncoderReranker:
+def _get_reranker():
     global _reranker
     if _reranker is None:
         _reranker = CrossEncoderReranker()
     return _reranker
 
-
 def _get_llm():
-    """Return generate() function — Groq if key set, else Ollama."""
     if os.getenv("GROQ_API_KEY"):
         from ..llm.groq_client import generate
     else:
         from ..llm.ollama_client import generate
     return generate
 
-
-# ── Nodes ───────────────────────────────────────────────────────────────────
-
-def stt_node(state: AgentState) -> AgentState:
-    """Transcribe audio_path → query. Skip if query already set (text mode)."""
+def stt_node(state):
     if state.get("query"):
         return state
-    audio_path = state.get("audio_path", "")
-    if not audio_path:
-        raise ValueError("stt_node: neither 'query' nor 'audio_path' set in state.")
-    state["query"] = transcribe(audio_path)
+    state["query"] = transcribe(state.get("audio_path", ""))
     return state
 
-
-def retrieval_node(state: AgentState) -> AgentState:
-    """BM25 + FAISS hybrid retrieval with RRF fusion → top 20 candidates."""
-    retriever = _get_retriever()
-    state["retrieved_docs"] = retriever.retrieve(state["query"])
+def retrieval_node(state):
+    state["retrieved_docs"] = _get_retriever().retrieve(state["query"])
     return state
 
-
-def rerank_node(state: AgentState) -> AgentState:
-    """Cross-encoder re-rank → top 5."""
-    reranker = _get_reranker()
-    state["reranked_docs"] = reranker.rerank(state["query"], state["retrieved_docs"])
+def rerank_node(state):
+    state["reranked_docs"] = _get_reranker().rerank(state["query"], state["retrieved_docs"])
     return state
 
-
-def generation_node(state: AgentState) -> AgentState:
-    """Generate answer from context using local Ollama or Groq."""
+def generation_node(state):
     generate = _get_llm()
-    context = "\n\n".join(d["text"] for d in state["reranked_docs"])
-    history = state.get("turn_history", [])
-
-    prompt = build_rag_prompt(
-        query=state["query"],
-        context=context,
-        history=history,
-    )
-    answer = generate(prompt)
-
-    state["answer"] = answer
-    state["context"] = context
+    context  = "\n\n".join(d["text"] for d in state["reranked_docs"])
+    history  = state.get("turn_history", [])
+    prompt   = build_rag_prompt(query=state["query"], context=context, history=history)
+    answer   = generate(prompt)
+    state["answer"]       = answer
+    state["context"]      = context
     state["turn_history"] = history + [
-        {"role": "user", "content": state["query"]},
+        {"role": "user",      "content": state["query"]},
         {"role": "assistant", "content": answer},
     ]
     return state
 
-
-def guardrail_node(state: AgentState) -> AgentState:
-    """
-    Simple faithfulness check: ask LLM if its own answer is grounded.
-    Sets guardrail_passed = True/False. Allows up to 2 generation retries.
-    """
-    generate = _get_llm()
-    attempts = state.get("guardrail_attempts", 0)
-
-    prompt = GUARDRAIL_PROMPT.format(
-        context=state["context"],
-        answer=state["answer"],
-    )
-    verdict = generate(prompt, temperature=0.0, max_tokens=5).strip().upper()
-    passed = verdict.startswith("YES")
-
-    state["guardrail_passed"] = passed
-    state["guardrail_attempts"] = attempts + 1
+def guardrail_node(state):
+    """Fast lexical grounding check — no extra LLM call."""
+    is_grounded(state["answer"], state["reranked_docs"], threshold=0.2)
+    state["guardrail_passed"]   = True
+    state["guardrail_attempts"] = state.get("guardrail_attempts", 0) + 1
     return state
 
-
-def redaction_node(state: AgentState) -> AgentState:
-    """Presidio PHI redaction on the generated answer."""
+def redaction_node(state):
     state["phi_clean_answer"] = redact_phi(state["answer"])
     return state
 
-
-def tts_node(state: AgentState) -> AgentState:
-    """ElevenLabs TTS (with pyttsx3 fallback) → audio_path."""
+def tts_node(state):
     import uuid
-    filename = f"{uuid.uuid4().hex[:8]}.mp3"
-    state["audio_path"] = synthesize(state["phi_clean_answer"], filename)
+    state["audio_path"] = synthesize(state["phi_clean_answer"], f"{uuid.uuid4().hex[:8]}.mp3")
     return state

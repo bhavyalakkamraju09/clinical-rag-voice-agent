@@ -41,7 +41,7 @@ def chunk_notes(notes: list[dict]) -> list[dict]:
             chunks.append({
                 "text": text,
                 "doc_id": note["id"],
-                "condition": note["condition"],
+                "condition": note["primary_condition"],
                 "visit_date": note.get("visit_date", ""),
                 "chunk_index": i,
             })

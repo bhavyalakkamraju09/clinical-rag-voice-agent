@@ -9,7 +9,7 @@ from .bm25_retriever import BM25Retriever
 from .faiss_retriever import FAISSRetriever
 
 K_RRF = 60
-TOP_N  = 20
+TOP_N  = 10
 CHUNKS_PATH = Path("data/processed/chunks.json")
 
 
