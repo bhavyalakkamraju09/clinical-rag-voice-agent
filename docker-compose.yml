@@ -1,0 +1,60 @@
+version: "3.9"
+
+services:
+  api:
+    build: .
+    container_name: clinical-rag-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - ./outputs:/app/outputs
+    env_file:
+      - .env
+    environment:
+      - OLLAMA_BASE_URL=http://ollama:11434
+    depends_on:
+      - ollama
+    command: uvicorn src.api.main:app --host 0.0.0.0 --port 8000
+
+  streamlit:
+    build: .
+    container_name: clinical-rag-ui
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    environment:
+      - API_BASE_URL=http://api:8000
+    depends_on:
+      - api
+    command: streamlit run app/streamlit_app.py --server.address 0.0.0.0
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: clinical-rag-ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    # GPU: uncomment below for NVIDIA
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
+
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:latest
+    container_name: clinical-rag-mlflow
+    ports:
+      - "5000:5000"
+    volumes:
+      - mlflow_data:/mlflow
+    command: mlflow server --host 0.0.0.0 --port 5000 --backend-store-uri /mlflow
+
+volumes:
+  ollama_data:
+  mlflow_data:

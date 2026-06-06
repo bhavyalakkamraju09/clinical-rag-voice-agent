@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+env/
+
+# Data — don't commit raw notes (even synthetic, keep repo clean)
+data/raw/
+data/processed/
+outputs/
+
+# Models
+*.pkl
+*.index
+lora-clinical/
+
+# Secrets
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# MLflow
+mlruns/
+
+# Streamlit
+.streamlit/
