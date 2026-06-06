@@ -19,7 +19,8 @@ golden:
 
 ## ── Run services ──────────────────────────────────────────────────────────
 run-api:
-	uvicorn src.api.main:app --reload --port 8000
+	export $$(cat .env | xargs) && \
+	export $(shell cat .env | xargs) && uvicorn src.api.main:app --reload --port 8000
 
 run-ui:
 	streamlit run app/streamlit_app.py
