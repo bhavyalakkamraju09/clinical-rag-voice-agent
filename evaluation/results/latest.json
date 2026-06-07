@@ -1,0 +1,8 @@
+{
+  "timestamp": 1780864743,
+  "n_questions": 50,
+  "faithfulness": 0.598,
+  "answer_relevancy": 0.664,
+  "context_recall": 0.278,
+  "avg_latency_ms": 6944.3
+}

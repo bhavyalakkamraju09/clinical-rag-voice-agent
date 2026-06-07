@@ -1,0 +1,440 @@
+{
+  "timestamp": 1780798132,
+  "n_questions": 43,
+  "faithfulness": 0.5,
+  "answer_relevancy": 0.658,
+  "context_recall": 0.451,
+  "avg_latency_ms": 5607.3,
+  "results": [
+    {
+      "question": "What is the patient's current diagnosis regarding their heart condition?",
+      "expected": "Congestive Heart Failure (CHF) \u2014 poorly controlled",
+      "answer": "The provided context does not contain the patient's current diagnosis regarding their heart condition. It only mentions the patients' presentations for evaluation of Congestive Heart Failure (CHF).",
+      "context_len": 2006,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.5,
+      "latency_ms": 790.3
+    },
+    {
+      "question": "What is Leah Levine's smoking history?",
+      "expected": "20 pack-years",
+      "answer": "The provided context does not contain this information.",
+      "context_len": 1887,
+      "faithfulness": 0.0,
+      "relevancy": 0.5,
+      "recall": 1.0,
+      "latency_ms": 605.9
+    },
+    {
+      "question": "What is the patient's blood pressure?",
+      "expected": "124/84 mmHg",
+      "answer": "The patient's blood pressure is 142/92 mmHg.",
+      "context_len": 1266,
+      "faithfulness": 0.5,
+      "relevancy": 1.0,
+      "recall": 0.8,
+      "latency_ms": 517.5
+    },
+    {
+      "question": "What is the patient's current diagnosis for the condition affecting their heart rhythm?",
+      "expected": "Atrial Fibrillation",
+      "answer": "The provided context does not contain information about the patient's current diagnosis for the condition affecting their heart rhythm.",
+      "context_len": 2047,
+      "faithfulness": 0.0,
+      "relevancy": 0.5,
+      "recall": 0.0,
+      "latency_ms": 6798.1
+    },
+    {
+      "question": "What medications are the patient currently taking for their Hyperthyroidism?",
+      "expected": "None explicitly mentioned in the note, however, the medication list does not explicitly exclude any thyroid medications, but the note does say 'Hyperthyroidism \u2014 poorly controlled'.",
+      "answer": "The provided context does not explicitly state that the patient is taking any medications specifically for Hyperthyroidism. However, it does mention that the patient is taking Levothyroxine 100mcg daily, which is typically used to treat Hypothyroidism, not Hyperthyroidism.",
+      "context_len": 1547,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.5,
+      "latency_ms": 5839.7
+    },
+    {
+      "question": "What is the patient's current smoking status?",
+      "expected": "Active smoker",
+      "answer": "The patient's current smoking status is an active smoker 0.5 PPD.",
+      "context_len": 2174,
+      "faithfulness": 0.5,
+      "relevancy": 0.8,
+      "recall": 0.5,
+      "latency_ms": 7775.5
+    },
+    {
+      "question": "What is the result of the patient's imaging studies for the Ischemic Stroke?",
+      "expected": "well controlled",
+      "answer": "The provided context does not contain the results of the patient's imaging studies for the Ischemic Stroke.",
+      "context_len": 1211,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.8,
+      "latency_ms": 4469.5
+    },
+    {
+      "question": "What is the patient's blood pressure?",
+      "expected": "120/78 mmHg",
+      "answer": "The patient's blood pressure is 142/92 mmHg.",
+      "context_len": 1266,
+      "faithfulness": 0.5,
+      "relevancy": 1.0,
+      "recall": 0.5,
+      "latency_ms": 4398.2
+    },
+    {
+      "question": "What is the patient's current diagnosis for their mental health condition?",
+      "expected": "Major Depressive Disorder",
+      "answer": "The provided context does not contain the current diagnosis for the patient's mental health condition. It only mentions the reason for the visit and the patient's chief complaint, but does not specify a diagnosis.",
+      "context_len": 2047,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.5,
+      "latency_ms": 6619.0
+    },
+    {
+      "question": "What adjustment was made to the patient's current medication plan?",
+      "expected": "Increase Pantoprazole dose",
+      "answer": "The provided context does not contain information about the patient's current medication plan or any adjustments made to it.",
+      "context_len": 684,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.0,
+      "latency_ms": 2468.2
+    },
+    {
+      "question": "What was the result of the CT chest imaging?",
+      "expected": "Hyperinflation consistent with emphysema. No pulmonary embolism.",
+      "answer": "The CT chest imaging showed hyperinflation consistent with emphysema and no pulmonary embolism.",
+      "context_len": 1644,
+      "faithfulness": 0.5,
+      "relevancy": 0.8,
+      "recall": 1.0,
+      "latency_ms": 6641.3
+    },
+    {
+      "question": "What is the patient's blood pressure?",
+      "expected": "110/72 mmHg",
+      "answer": "The patient's blood pressure is 142/92 mmHg.",
+      "context_len": 1266,
+      "faithfulness": 0.5,
+      "relevancy": 1.0,
+      "recall": 0.5,
+      "latency_ms": 5582.4
+    },
+    {
+      "question": "What is the patient's current diagnosis for the condition that is causing shortness of breath?",
+      "expected": "Anemia (Iron Deficiency)",
+      "answer": "The provided context does not contain the current diagnosis for the condition causing shortness of breath. It only mentions the patients' chief complaints and comorbidities but does not specify the current diagnosis.",
+      "context_len": 2343,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.0,
+      "latency_ms": 9042.6
+    },
+    {
+      "question": "What is the patient's current blood pressure?",
+      "expected": "129/70 mmHg",
+      "answer": "The provided context does not contain the current blood pressure reading for the patient being evaluated for Congestive Heart Failure (CHF) and Chronic Obstructive Pulmonary Disease (COPD). However, it does contain the blood pressure readings for two other patients:\n\n1. BP 151/86 mmHg (Patient being evaluated for CHF, but this is not the current reading, it's from a previous assessment)\n2. BP 109/76 mmHg (Patient with Peripheral Artery Disease, Gastroesophageal Reflux Disease, and Irritable Bowel Syndrome)",
+      "context_len": 1702,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.5,
+      "latency_ms": 7118.4
+    },
+    {
+      "question": "What change to the patient's treatment plan is recommended?",
+      "expected": "Increase Carvedilol dose",
+      "answer": "The provided context does not contain information about a change to the patient's treatment plan. It only mentions continuing the current regimen.",
+      "context_len": 735,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.0,
+      "latency_ms": 4728.3
+    },
+    {
+      "question": "What is the patient's former smoking status?",
+      "expected": "Former smoker",
+      "answer": "The patient's former smoking status is that they were all former smokers, having quit 10 years ago.",
+      "context_len": 1954,
+      "faithfulness": 0.8,
+      "relevancy": 0.5,
+      "recall": 1.0,
+      "latency_ms": 6813.1
+    },
+    {
+      "question": "What was the result of the abdominal ultrasound?",
+      "expected": "Hepatic steatosis, no focal lesions",
+      "answer": "The abdominal ultrasound showed hepatic steatosis, with no focal lesions.",
+      "context_len": 1404,
+      "faithfulness": 0.8,
+      "relevancy": 0.8,
+      "recall": 1.0,
+      "latency_ms": 6544.7
+    },
+    {
+      "question": "What is the dose of Apixaban prescribed to the patient?",
+      "expected": "5mg twice daily",
+      "answer": "The provided context does not contain this information.",
+      "context_len": 679,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.5,
+      "latency_ms": 3402.4
+    },
+    {
+      "question": "What is the patient's blood pressure?",
+      "expected": "122/83 mmHg",
+      "answer": "The patient's blood pressure is 142/92 mmHg.",
+      "context_len": 1266,
+      "faithfulness": 0.5,
+      "relevancy": 1.0,
+      "recall": 0.5,
+      "latency_ms": 5614.3
+    },
+    {
+      "question": "What is the patient's diagnosis for admission?",
+      "expected": "Anemia (Iron Deficiency)",
+      "answer": "The provided context does not contain information about the patient's diagnosis for admission. It only contains information about patients presenting for various procedures and evaluations.",
+      "context_len": 2065,
+      "faithfulness": 0.0,
+      "relevancy": 0.5,
+      "recall": 0.0,
+      "latency_ms": 8354.9
+    },
+    {
+      "question": "What is the patient's current hemoglobin A1c level?",
+      "expected": "Not mentioned (or unavailable)",
+      "answer": "The patient's current hemoglobin A1c level is 9.3%.",
+      "context_len": 1836,
+      "faithfulness": 0.5,
+      "relevancy": 1.0,
+      "recall": 0.0,
+      "latency_ms": 7988.8
+    },
+    {
+      "question": "What is the patient's social history regarding smoking?",
+      "expected": "Never smoker",
+      "answer": "The provided context does not contain this information for all patients. However, for the patients with the following histories of present illness, their social history regarding smoking is as follows:\n\n1. Acute exacerbation of Peripheral Artery Disease: Active smoker 0.5 PPD.\n2. Acute exacerbation of COPD: Active smoker 0.5 PPD.\n3. Acute exacerbation of Anemia (Iron Deficiency): Active smoker, 1 PPD x 30 years.\n4. Decompensated Chronic Kidney Disease Stage 3: Active smoker, 1 PPD x 30 years.\n5. New patient evaluation of COPD: Active smoker, 1 PPD x 30 years.",
+      "context_len": 1947,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.5,
+      "latency_ms": 5799.4
+    },
+    {
+      "question": "What were the findings on the patient's renal ultrasound?",
+      "expected": "Bilateral echogenic kidneys, no hydronephrosis",
+      "answer": "Bilateral echogenic kidneys, no hydronephrosis.",
+      "context_len": 1347,
+      "faithfulness": 0.0,
+      "relevancy": 0.8,
+      "recall": 1.0,
+      "latency_ms": 6560.4
+    },
+    {
+      "question": "What is the patient's current medication regimen for hypertension?",
+      "expected": "Lisinopril 10mg daily and Hydrochlorothiazide 25mg daily",
+      "answer": "The provided context does not contain information about the patient's current medication regimen for hypertension.",
+      "context_len": 916,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.5,
+      "latency_ms": 3497.8
+    },
+    {
+      "question": "What is the patient's diagnosis for the indication of the paracentesis procedure?",
+      "expected": "Chronic Liver Disease",
+      "answer": "The provided context does not contain the patient's diagnosis for the indication of the paracentesis procedure. It only mentions the indication as \"Hypertension\" for each patient.",
+      "context_len": 2239,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.5,
+      "latency_ms": 9029.3
+    },
+    {
+      "question": "What is the patient's Troponin level?",
+      "expected": "0.016 ng/mL",
+      "answer": "The patient's Troponin level is 0.024 ng/mL.",
+      "context_len": 1573,
+      "faithfulness": 0.5,
+      "relevancy": 1.0,
+      "recall": 0.5,
+      "latency_ms": 5634.5
+    },
+    {
+      "question": "What is the plan for the patient's follow-up?",
+      "expected": "Follow-up in 1 day",
+      "answer": "The plan for the patient's follow-up is as follows:\n\n- Follow-up in 1 day (as per one NP's plan)\n- Follow-up in 3 days (as per the plans of the other 5 NPs)",
+      "context_len": 729,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.5,
+      "latency_ms": 2495.2
+    },
+    {
+      "question": "What is the patient's current medication regimen for managing their Chronic Obstructive Pulmonary Disease (COPD)?",
+      "expected": "Not mentioned in the note. However, the medications listed do not include any typical COPD medications such as bronchodilators or corticosteroids.",
+      "answer": "The provided context does not contain information about the patient's current medication regimen for managing their Chronic Obstructive Pulmonary Disease (COPD).",
+      "context_len": 1093,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.0,
+      "latency_ms": 5695.9
+    },
+    {
+      "question": "What is the patient's current level of physical activity, as described in the social history?",
+      "expected": "Sedentary lifestyle",
+      "answer": "The 38-year-old male with Coronary Artery Disease is an active smoker 0.5 PPD. The 49-year-old female with Peripheral Artery Disease is an active smoker 0.5 PPD. The 41-year-old female with Coronary Artery Disease is a never smoker. The patient admitted for acute exacerbation of Anemia (Iron Deficiency) is an active smoker, 1 PPD x 30 years. The patient admitted for acute exacerbation of Stroke (Ischemic) is a former smoker, quit 10 years ago, with a sedentary lifestyle.",
+      "context_len": 2003,
+      "faithfulness": 0.5,
+      "relevancy": 0.8,
+      "recall": 0.0,
+      "latency_ms": 6919.9
+    },
+    {
+      "question": "What was the result of the Holter monitor?",
+      "expected": "Occasional PACs, no sustained arrhythmia",
+      "answer": "The Holter monitor showed occasional premature atrial contractions (PACs), with no sustained arrhythmia.",
+      "context_len": 1388,
+      "faithfulness": 1.0,
+      "relevancy": 0.8,
+      "recall": 1.0,
+      "latency_ms": 5737.6
+    },
+    {
+      "question": "What is the dose of Apixaban prescribed to Stephanie Obrien?",
+      "expected": "5mg twice daily",
+      "answer": "The provided context does not contain this information.",
+      "context_len": 659,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.0,
+      "latency_ms": 3429.3
+    },
+    {
+      "question": "What is the patient's current diagnosis for the indication of the bone marrow biopsy?",
+      "expected": "Stroke (Ischemic)",
+      "answer": "The provided context does not contain the patient's current diagnosis for the indication of the bone marrow biopsy.",
+      "context_len": 2135,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.0,
+      "latency_ms": 8704.4
+    },
+    {
+      "question": "What is the patient's lipid profile according to the laboratory results?",
+      "expected": "LDL 79, HDL 32",
+      "answer": "The patient's lipid profile according to the laboratory results is as follows:\n\n1. LDL (LDL 128, HDL 41) \n2. LDL (179, HDL 68) \n3. LDL (143, HDL 52) \n4. LDL (172, HDL 53) \n5. LDL (102, HDL 49)",
+      "context_len": 1622,
+      "faithfulness": 0.8,
+      "relevancy": 0.8,
+      "recall": 0.5,
+      "latency_ms": 7757.1
+    },
+    {
+      "question": "What is the patient's blood pressure?",
+      "expected": "138/74 mmHg",
+      "answer": "The patient's blood pressure is 142/92 mmHg.",
+      "context_len": 1266,
+      "faithfulness": 0.5,
+      "relevancy": 1.0,
+      "recall": 0.8,
+      "latency_ms": 4591.8
+    },
+    {
+      "question": "What is Brianna Martinez's history of smoking?",
+      "expected": "20 pack-year history, quit 5 years ago",
+      "answer": "The provided context does not contain this information.",
+      "context_len": 666,
+      "faithfulness": 0.5,
+      "relevancy": 0.0,
+      "recall": 0.0,
+      "latency_ms": 3534.2
+    },
+    {
+      "question": "What is the dose of Metformin prescribed to the patient?",
+      "expected": "1000mg twice daily",
+      "answer": "The dose of Metformin prescribed to the patient varies across different sections of the clinical context:\n\n1. Initially, the dose is 500mg twice daily.\n2. Later, the dose is increased to 1000mg twice daily in three separate instances (with different patients).\n3. The patient in the last section of the context is prescribed 1000mg twice daily.\n\nTherefore, the dose of Metformin prescribed to the patient is 1000mg twice daily.",
+      "context_len": 2460,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.5,
+      "latency_ms": 9908.8
+    },
+    {
+      "question": "What is the patient's blood pressure?",
+      "expected": "123/78 mmHg",
+      "answer": "The patient's blood pressure is 142/92 mmHg.",
+      "context_len": 1266,
+      "faithfulness": 0.5,
+      "relevancy": 1.0,
+      "recall": 0.5,
+      "latency_ms": 4707.2
+    },
+    {
+      "question": "What is the patient's current treatment plan for Generalized Anxiety Disorder?",
+      "expected": "Reports improvement since last visit, but admits to occasional missed doses.",
+      "answer": "The patient's current treatment plan for Generalized Anxiety Disorder is to continue current medications and reinforce lifestyle modifications.",
+      "context_len": 1012,
+      "faithfulness": 0.8,
+      "relevancy": 0.8,
+      "recall": 0.5,
+      "latency_ms": 3491.5
+    },
+    {
+      "question": "What is the patient's social history regarding smoking?",
+      "expected": "Never smoker",
+      "answer": "The provided context contains the following information regarding the patients' social history regarding smoking:\n\n- Patient 1: Active smoker 0.5 PPD.\n- Patient 2: Active smoker 0.5 PPD.\n- Patient 3: Active smoker, 1 PPD x 30 years.\n- Patient 4: Active smoker, 1 PPD x 30 years.\n- Patient 5: Active smoker, 1 PPD x 30 years.\n\nNote: PPD stands for pack-years of smoking.",
+      "context_len": 1947,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.5,
+      "latency_ms": 6929.1
+    },
+    {
+      "question": "What is the result of the patient's imaging studies?",
+      "expected": "Not mentioned",
+      "answer": "The results of the patient's imaging studies are as follows:\n\n- MRI brain: Scattered white matter changes, no acute infarct (mentioned in 3 separate assessments).\n- Stress test: No inducible ischemia at 85% max heart rate.\n- Echo: EF 45-50%, mild diastolic dysfunction, no wall motion abnormalities.\n- Renal ultrasound: Results not provided in the context.\n- Pulmonary function tests: Results not provided in the context.",
+      "context_len": 1447,
+      "faithfulness": 0.8,
+      "relevancy": 0.9,
+      "recall": 0.0,
+      "latency_ms": 6774.5
+    },
+    {
+      "question": "What is the patient's current medication regimen for managing their Hypothyroidism?",
+      "expected": "None mentioned in the note, but they have a comorbidity of Hypothyroidism.",
+      "answer": "The provided context does not contain this information.",
+      "context_len": 928,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.5,
+      "latency_ms": 4448.4
+    },
+    {
+      "question": "What is the patient's blood pressure?",
+      "expected": "128/78 mmHg",
+      "answer": "The patient's blood pressure is 142/92 mmHg.",
+      "context_len": 1266,
+      "faithfulness": 0.5,
+      "relevancy": 1.0,
+      "recall": 0.5,
+      "latency_ms": 5463.4
+    },
+    {
+      "question": "What is the patient's current status regarding Peripheral Artery Disease?",
+      "expected": "poorly controlled",
+      "answer": "The provided context does not contain information about the current status of Peripheral Artery Disease for any of the patients. It only mentions that they are presenting urgently with altered mental status in the setting of known Peripheral Artery Disease.",
+      "context_len": 2136,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.5,
+      "latency_ms": 7891.2
+    }
+  ]
+}

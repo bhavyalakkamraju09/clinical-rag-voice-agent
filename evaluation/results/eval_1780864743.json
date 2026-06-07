@@ -1,0 +1,510 @@
+{
+  "timestamp": 1780864743,
+  "n_questions": 50,
+  "faithfulness": 0.598,
+  "answer_relevancy": 0.664,
+  "context_recall": 0.278,
+  "avg_latency_ms": 6944.3,
+  "results": [
+    {
+      "question": "What medications are commonly prescribed for Type 2 Diabetes patients?",
+      "expected": "Based on the provided clinical notes, the following medications are commonly prescribed for patients with conditions related to Type 2 Diabetes:\n\n1. Semaglutide 0.5mg weekly (prescribed to Mrs. Virginia Fischer for Irritable Bowel Syndrome, but also used for Type 2 Diabetes management).\n2. Metformin 1000mg twice daily (prescribed to Mrs. Virginia Fischer for Type 2 Diabetes management, although not explicitly stated in the notes).\n\nNote that these medications are commonly used for Type 2 Diabetes management, but the specific indication for each patient may vary.",
+      "answer": "The medications commonly prescribed for Type 2 Diabetes patients in this context are:\n\n1. Insulin glargine 20 units nightly\n2. Empagliflozin 10mg daily\n3. Donepezil is not typically used for diabetes, however, it is prescribed in this context.",
+      "context_len": 2318,
+      "faithfulness": 0.8,
+      "relevancy": 0.8,
+      "recall": 0.5,
+      "latency_ms": 928.8
+    },
+    {
+      "question": "What blood pressure readings are documented for hypertensive patients?",
+      "expected": "Based on the provided clinical notes, the following blood pressure readings are documented for hypertensive patients:\n\n- Patient Emily Schmidt (Procedure Note, 2025-01-06): No blood pressure reading is mentioned in the note.\n- Patient Alex Clark (Urgent Visit Note, 2025-05-11): No blood pressure reading is mentioned in the note.\n- Patient Joseph Rivera (Discharge Summary, 2026-01-06): No blood pressure reading is mentioned in the note.\n- Patient Thomas Evans (Follow-up Note, 2025-10-16): No blood pressure reading is mentioned in the note.\n\nHowever, the following patients have medications that are commonly used to treat hypertension:\n\n- Patient Emily Schmidt (Procedure Note, 2025-01-06): Lisinopril 1mg daily\n- Patient Alex Clark (Urgent Visit Note, 2025-05-11): No blood pressure medication is mentioned in the note.\n- Patient Joseph",
+      "answer": "The provided context does not contain specific blood pressure readings for the hypertensive patients. However, it mentions that the patient's hypertension is described as \"stable,\" \"well-controlled,\" and \"poorly controlled\" at different points in the discharge summary.",
+      "context_len": 1140,
+      "faithfulness": 0.8,
+      "relevancy": 0.5,
+      "recall": 0.0,
+      "latency_ms": 625.4
+    },
+    {
+      "question": "What inhalers are prescribed for COPD patients?",
+      "expected": "Based on the provided clinical notes, there is no mention of an inhaler prescribed for COPD patients. However, there is a mention of an Albuterol inhaler prescribed for Peripheral Artery Disease patient, Brandon Cooper (MRN: MRN-12274070).",
+      "answer": "The prescribed inhalers for COPD patients are:\n\n1. Albuterol inhaler (2 puffs PRN)\n2. Tiotropium inhaler (18mcg daily)\n3. Budesonide/formoterol inhaler (160/4.5mcg twice daily)",
+      "context_len": 2322,
+      "faithfulness": 0.5,
+      "relevancy": 1.0,
+      "recall": 0.0,
+      "latency_ms": 573.8
+    },
+    {
+      "question": "What comorbidities appear alongside Congestive Heart Failure?",
+      "expected": "According to the FOLLOW-UP NOTE \u2014 2025-12-26, the comorbidities that appear alongside Congestive Heart Failure (CHF) for Patient Mary Morales are:\n\n1. Anemia (Iron Deficiency)",
+      "answer": "The comorbidities that appear alongside Congestive Heart Failure (CHF) in the provided context are:\n\n1. Chronic Obstructive Pulmonary Disease (COPD)\n2. Chronic Kidney Disease Stage 3\n3. Parkinson's Disease\n4. Gastroesophageal Reflux Disease (GERD)\n5. Stroke (Ischemic)\n6. Generalized Anxiety Disorder",
+      "context_len": 2012,
+      "faithfulness": 0.5,
+      "relevancy": 0.8,
+      "recall": 0.0,
+      "latency_ms": 7749.8
+    },
+    {
+      "question": "What HbA1c levels are documented for diabetic patients?",
+      "expected": "There are no HbA1c levels documented for diabetic patients in the provided clinical notes. However, there are mentions of medications related to diabetes management, such as Metformin, but no specific HbA1c values are mentioned.",
+      "answer": "The documented HbA1c levels for diabetic patients are:\n\n1. 8.8%\n2. 8.6%\n3. 7.7%\n4. 9.3%\n5. 10.9%",
+      "context_len": 1404,
+      "faithfulness": 0.9,
+      "relevancy": 0.5,
+      "recall": 0.0,
+      "latency_ms": 6693.1
+    },
+    {
+      "question": "What findings are documented on chest X-rays for heart failure patients?",
+      "expected": "There are no findings documented on chest X-rays for heart failure patients in the provided clinical notes. However, there is a mention of cardiac catheterization in the procedure note for Michael Lyons, which is related to Alzheimer's Disease, not heart failure.",
+      "answer": "The provided context does not contain information about chest X-ray findings for the heart failure patients.",
+      "context_len": 2006,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.0,
+      "latency_ms": 7587.0
+    },
+    {
+      "question": "What smoking histories are documented in patient records?",
+      "expected": "The smoking histories documented in patient records are as follows:\n\n- Never smoker: \n  - Elizabeth Davis (56 years old)\n  - Stephen Sanchez (77 years old)\n  - Jeremy Hernandez (58 years old)\n  - Stacy Petersen (86 years old)\n\n- Active smoker, 1 PPD x 30 years: \n  - Sean Miller (44 years old)\n  - Karl Peterson (80 years old)\n  - Vincent Gonzalez (63 years old)\n  - Andrew Fuller (69 years old)",
+      "answer": "The smoking histories documented in patient records are:\n\n1. Active smoker 0.5 PPD.\n2. Active smoker, 1 PPD x 30 years.\n3. Never smoker.\n4. Former smoker, quit 10 years ago.",
+      "context_len": 1936,
+      "faithfulness": 0.8,
+      "relevancy": 1.0,
+      "recall": 0.5,
+      "latency_ms": 8052.3
+    },
+    {
+      "question": "What follow-up intervals are recommended for chronic disease management?",
+      "expected": "Based on the clinical notes, the follow-up intervals for chronic disease management are not explicitly stated. However, the notes suggest that patients with chronic conditions, such as Chronic Liver Disease, Hypothyroidism, and Peripheral Artery Disease, are seen for routine follow-ups. \n\nFor example, Tony Robinson, a patient with Chronic Liver Disease, is seen for a follow-up visit 1 year after his initial visit (2025-08-05). Rachel Miles, a patient with Peripheral Artery Disease, is seen as a new patient for evaluation of her condition (2025-04-10). \n\nA general guideline for follow-up intervals for chronic disease management is not provided in the notes. However, the American Diabetes Association recommends follow-up visits every 3-6 months for patients with diabetes, and the American Heart Association recommends follow-up visits every 6-12 months for patients with cardiovascular disease.",
+      "answer": "The follow-up intervals recommended for chronic disease management are as follows:\n\n- 4 weeks for patients with:\n  1. Stroke (Ischemic) \u2014 well controlled and Chronic Kidney Disease Stage 3 \u2014 poorly controlled\n  2. Chronic Obstructive Pulmonary Disease (COPD) with other conditions (e.g., Irritable Bowel Syndrome, Chronic Liver Disease, Rheumatoid Arthritis, Coronary Artery Disease)\n- 12 weeks for patients with:\n  1. Chronic Obstructive Pulmonary Disease (COPD) \u2014 poorly controlled, Hyperthyroidism, and Chronic Kidney Disease Stage 4",
+      "context_len": 1349,
+      "faithfulness": 0.8,
+      "relevancy": 0.8,
+      "recall": 0.5,
+      "latency_ms": 6743.9
+    },
+    {
+      "question": "What anticoagulants are used for atrial fibrillation patients?",
+      "expected": "Based on the provided clinical notes, the anticoagulants used for atrial fibrillation patients are:\n\n- Apixaban 5mg twice daily (Patient Kelly Holland, MRN: MRN-37910994)\n- Warfarin 5mg daily (Patient Betty Henry, MRN: MRN-52430001)\n- Carvedilol 12.5mg twice daily (Patient Jose Marshall, MRN: MRN-03695225) - Note: Carvedilol is primarily an anti-arrhythmic medication, but it is often used in combination with anticoagulants for atrial fibrillation patients.",
+      "answer": "The provided context does not contain this information.",
+      "context_len": 2060,
+      "faithfulness": 0.0,
+      "relevancy": 0.0,
+      "recall": 0.5,
+      "latency_ms": 10584.4
+    },
+    {
+      "question": "What eGFR values are documented for Chronic Kidney Disease patients?",
+      "expected": "There are no eGFR values documented for Chronic Kidney Disease patients in the provided clinical notes. However, the following patients have documented comorbidities or conditions related to kidney function:\n\n- Alison Mckinney (MRN-74812365) has Peripheral Artery Disease and severe hypertension, but no eGFR value is mentioned.\n- Monica Hill (MRN-41037478) has Hypertension, but no eGFR value is mentioned.\n- Jordan Bennett (MRN-95808065) has Type 2 Diabetes Mellitus, but no eGFR value is mentioned.\n- Kathryn Freeman (MRN-56957877) has Congestive Heart Failure (CHF) and Chronic Obstructive Pulmonary Disease (COPD), but no eGFR value is mentioned.\n\nHowever, the following patients have documented kidney-related medications:\n\n- Alison Mckinney (MRN-74812365) is taking Spironolactone 25",
+      "answer": "The eGFR values documented for Chronic Kidney Disease patients are:\n\n1. 20 mL/min (Chronic Kidney Disease Stage 4)\n2. 35 mL/min (Chronic Kidney Disease Stage 3)\n3. 40 mL/min (Chronic Kidney Disease Stage 4)\n4. 54 mL/min (Chronic Kidney Disease Stage 4)\n5. 31 mL/min (Chronic Kidney Disease Stage 3)",
+      "context_len": 1918,
+      "faithfulness": 0.5,
+      "relevancy": 0.8,
+      "recall": 0.0,
+      "latency_ms": 8672.1
+    },
+    {
+      "question": "What does an echocardiogram show for heart failure patients?",
+      "expected": "There is no information provided about echocardiogram results for heart failure patients in the given clinical notes.",
+      "answer": "The echocardiogram shows an EF of 45-50% and mild diastolic dysfunction, with no wall motion abnormalities.",
+      "context_len": 1520,
+      "faithfulness": 0.8,
+      "relevancy": 0.8,
+      "recall": 0.5,
+      "latency_ms": 7567.1
+    },
+    {
+      "question": "What specialist referrals are made for cardiac conditions?",
+      "expected": "Based on the provided clinical notes, there are no specialist referrals made for cardiac conditions explicitly mentioned. However, a cardiac catheterization procedure was performed for a patient with Rheumatoid Arthritis (Lawrence Santos, MRN: MRN-57911660) and Chronic Kidney Disease Stage 3.",
+      "answer": "Refer to Cardiology for further evaluation.",
+      "context_len": 739,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.0,
+      "latency_ms": 4541.3
+    },
+    {
+      "question": "What medications are used for hypertension management?",
+      "expected": "Based on the provided clinical notes, the following medications are used for hypertension management:\n\n1. Apixaban 5mg twice daily (used in patients Jesus Bean and Betty Austin)\n2. Furosemide 20mg daily (used in patient Scott Martinez)\n3. Lisinopril 20mg daily (used in patient Thomas Gilbert)\n4. Montel (presumably Montelukast, used in patient William Keller, but dosage not specified)\n5. Hydrochlorothiazide 25mg daily (used in patients Betty Austin and Thomas Gilbert)",
+      "answer": "The medications used for hypertension management are:\n\n1. Hydrochlorothiazide 25mg daily\n2. Amlodipine 10mg daily\n3. Lisinopril 10mg daily (and 20mg daily in one instance)\n4. Furosemide 40mg twice daily (note: typically used for edema, but also has antihypertensive effects)",
+      "context_len": 2067,
+      "faithfulness": 0.5,
+      "relevancy": 0.8,
+      "recall": 0.5,
+      "latency_ms": 10443.2
+    },
+    {
+      "question": "What SpO2 levels are documented for COPD patients?",
+      "expected": "There are no documented SpO2 levels for COPD patients in the provided clinical notes. However, one patient with a history of Obstructive Sleep Apnea (Brent Williams) has a documented SpO2 level of 96% in the procedure note for paracentesis.",
+      "answer": "The SpO2 levels documented for COPD patients are:\n\n- 96% (first COPD patient)\n- 91% (second COPD patient)\n- 95% (third COPD patient)",
+      "context_len": 2010,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.0,
+      "latency_ms": 10106.3
+    },
+    {
+      "question": "What Holter monitor findings are documented in patient records?",
+      "expected": "There are no Holter monitor findings documented in the provided patient records.",
+      "answer": "Occasional PACs, no sustained arrhythmia.",
+      "context_len": 1522,
+      "faithfulness": 0.5,
+      "relevancy": 0.8,
+      "recall": 0.5,
+      "latency_ms": 5633.6
+    },
+    {
+      "question": "What renal ultrasound findings appear for CKD patients?",
+      "expected": "Unfortunately, the provided clinical notes do not contain specific renal ultrasound findings for CKD patients. However, I can provide information on the patients with CKD mentioned in the notes.\n\nTwo patients have CKD mentioned in the notes:\n\n1. Carolyn Hernandez (MRN: MRN-33407644) - CKD Stage 3, with improvement since last visit.\n2. William Whitehead (MRN: MRN-49533016) - CKD Stage 3, with improvement since admission.\n3. Matthew Wood (MRN: MRN-49932163) - CKD Stage 3 is not explicitly mentioned, but he has Type 2 Diabetes Mellitus and Hypertension, which are comorbidities often associated with CKD.\n\nHowever, there is no information on renal ultrasound findings for these patients.",
+      "answer": "Bilateral echogenic kidneys, no hydronephrosis.",
+      "context_len": 1409,
+      "faithfulness": 0.5,
+      "relevancy": 0.8,
+      "recall": 0.0,
+      "latency_ms": 6488.4
+    },
+    {
+      "question": "What lipid panel values are documented including LDL and HDL?",
+      "expected": "Unfortunately, the provided clinical notes do not contain lipid panel values for any of the patients.",
+      "answer": "The lipid panel values documented are:\n\n- LDL: 82, 76, 102, 163, 179\n- HDL: 62, 63, 49, 68, 68",
+      "context_len": 1503,
+      "faithfulness": 0.9,
+      "relevancy": 1.0,
+      "recall": 0.0,
+      "latency_ms": 7737.8
+    },
+    {
+      "question": "What medications are prescribed for osteoporosis management?",
+      "expected": "Based on the provided clinical notes, there is no specific mention of medications prescribed for osteoporosis management. However, some medications that may be related to osteoporosis management are mentioned:\n\n- Furosemide (prescribed for patients Seth Benitez, Susan Jackson, and Michael Hall) is a diuretic that may be used to manage conditions related to osteoporosis, such as osteoporotic compression fractures.\n- Omeprazole (prescribed for patients Seth Benitez and Michael Hall) is a proton pump inhibitor that may be used to manage conditions related to osteoporosis, such as osteoporotic fractures caused by gastrointestinal bleeding.\n- Atorvastatin (prescribed for patients Seth Benitez and Karen Montoya) is a statin that may be used to manage conditions related to osteoporosis, such as osteoporotic fractures caused by cardiovascular disease.\n\nHowever, there is no direct mention of medications specifically prescribed for osteoporosis management, such as bisphosphon",
+      "answer": "Calcium carbonate 500mg twice daily is prescribed for osteoporosis management.",
+      "context_len": 2235,
+      "faithfulness": 0.8,
+      "relevancy": 0.5,
+      "recall": 0.5,
+      "latency_ms": 10754.7
+    },
+    {
+      "question": "What INR values are documented for patients on Warfarin?",
+      "expected": "Based on the provided clinical notes, the INR value is documented for Christopher Camacho, who is on Warfarin 5mg daily. The INR value is not explicitly mentioned in the notes, but it is implied that the patient is clinically improved and medically stable for discharge, suggesting that the INR value is within a therapeutic range.",
+      "answer": "The INR values documented for patients on Warfarin are:\n\n- 2.5\n- 2.6\n- 2.1\n- 2.0",
+      "context_len": 1991,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.8,
+      "latency_ms": 7824.7
+    },
+    {
+      "question": "What CT chest findings are documented for COPD patients?",
+      "expected": "There are no documented CT chest findings for COPD patients in the provided clinical notes. However, one patient, James Willis (MRN: MRN-97399745), has a diagnosis of COPD, but there is no mention of CT chest findings.",
+      "answer": "Hyperinflation consistent with emphysema. No pulmonary embolism.",
+      "context_len": 1714,
+      "faithfulness": 0.0,
+      "relevancy": 0.8,
+      "recall": 0.5,
+      "latency_ms": 6686.3
+    },
+    {
+      "question": "What treatment plans are documented for Parkinson's Disease?",
+      "expected": "There is no documented treatment plan for Parkinson's Disease in the provided clinical notes. However, Levodopa/carbidopa 25/100mg three times a day is mentioned as a current medication for a patient with Obstructive Sleep Apnea, but it is not explicitly stated that this patient has Parkinson's Disease.",
+      "answer": "The documented treatment plans for Parkinson's Disease are:\n\n1. Continue current medications.\n2. Reinforce lifestyle modifications.\n3. Follow-up appointments at varying intervals:\n   - 8 weeks (signed by Tyler Henderson, PA-C and Valerie Martin, PA-C)\n   - 12 weeks (signed by Geoffrey Jones, PA-C and Gabrielle Rodriguez, MD)\n   - 7 days (signed by Cassidy Smith, NP)",
+      "context_len": 999,
+      "faithfulness": 0.8,
+      "relevancy": 0.8,
+      "recall": 0.5,
+      "latency_ms": 4616.3
+    },
+    {
+      "question": "What complications are noted in discharge summaries?",
+      "expected": "There are no discharge summaries in the provided clinical notes. However, complications are mentioned in the following notes:\n\n- Stroke (Ischemic) in the follow-up note for Olivia Skinner.\n- Congestive Heart Failure (CHF) in the new patient note for Gabrielle Campbell.\n- Peripheral Artery Disease in the new patient note for Joanna Jacobs.\n- Hyperthyroidism in the procedure notes for Wesley Collins and Stephanie Bowen.\n- Asthma in the urgent visit note for Shannon Sharp.\n- Obstructive Sleep Apnea in the new patient note for Leslie Zimmerman.\n- Chronic Liver Disease in the follow-up note for David Garcia.\n- Anemia (Iron Deficiency) in the procedure note for Wesley Collins.",
+      "answer": "The complications noted in discharge summaries are:\n\n1. No major complications (Patient: Jane Hoffman, 2026-02-26)\n2. Acute kidney injury (Patient: Timothy Scott, 2026-04-13; Patient: Melissa Kim, 2026-03-14)\n3. Electrolyte imbalances (Patient: Nicole Spencer, 2025-01-25)",
+      "context_len": 2141,
+      "faithfulness": 0.5,
+      "relevancy": 0.8,
+      "recall": 0.5,
+      "latency_ms": 10061.7
+    },
+    {
+      "question": "What lab values are monitored for patients on anticoagulants?",
+      "expected": "Based on the provided clinical notes, patients on anticoagulants (e.g., Semaglutide, Clopidogrel) are monitored for the following lab values:\n\n- International Normalized Ratio (INR) is not mentioned, but it is a common lab value monitored for patients on anticoagulants like Warfarin, which is not present in the notes.\n- However, patients on anticoagulants like Clopidogrel are monitored for:\n  - Platelet count (not explicitly mentioned in the notes, but it is a common lab value monitored for patients on anticoagulants).\n  - Hemoglobin (not explicitly mentioned in the notes, but it is a common lab value monitored for patients on anticoagulants).\n  - Liver function tests (LFTs) are not explicitly mentioned in the notes, but they are a common lab value monitored for patients on anticoagulants.\n  - Renal function tests (e.g",
+      "answer": "The lab values monitored for patients on anticoagulants are INR and PT. \n\nINR values are: \n- 3.0 (twice)\n- 3.5\n\nPT values are: \n- 23s (twice)\n- 19s\n- 25s\n- 27s\n- 23s",
+      "context_len": 2421,
+      "faithfulness": 0.8,
+      "relevancy": 0.8,
+      "recall": 0.5,
+      "latency_ms": 11038.5
+    },
+    {
+      "question": "What medications are prescribed for heart failure management?",
+      "expected": "Based on the provided clinical notes, the following medications are prescribed for heart failure management:\n\n1. Spironolactone 25mg daily (Patient: Jeffrey Griffin, MRN: MRN-36006668)\n2. Nitroglycerin 0.4mg SL PRN (Patient: Richard Short, MRN: MRN-52209393)\n3. Metoprolol succinate 50mg daily (Patient: Beverly Patel, MRN: MRN-46992058)\n\nNote that while these medications may be used in heart failure management, they may also be prescribed for other conditions.",
+      "answer": "The medications prescribed for heart failure management are:\n\n1. Amlodipine 10mg daily\n2. Lisinopril 10mg daily\n3. Furosemide 20mg daily\n4. Hydrochlorothiazide 25mg daily \n\nThese medications are mentioned in the context under the \"Current Medications\" section for the patient with Congestive Heart Failure (CHF) \u2014 well controlled.",
+      "context_len": 2310,
+      "faithfulness": 0.5,
+      "relevancy": 0.8,
+      "recall": 0.5,
+      "latency_ms": 11169.8
+    },
+    {
+      "question": "What imaging studies are ordered for stroke patients?",
+      "expected": "There is no information provided about stroke patients in the given clinical notes. However, I can tell you that imaging studies commonly ordered for stroke patients include:\n\n- Computed Tomography (CT) scans\n- Magnetic Resonance Imaging (MRI) scans\n- Magnetic Resonance Angiography (MRA) scans\n- Computed Tomography Angiography (CTA) scans\n\nThese imaging studies are used to diagnose and evaluate the extent of stroke, as well as to identify potential causes such as blood clots or aneurysms.",
+      "answer": "Renal ultrasound is ordered for stroke patients. \n\nAdditionally, an echocardiogram is ordered for a stroke patient with a stable condition.",
+      "context_len": 1377,
+      "faithfulness": 0.8,
+      "relevancy": 0.5,
+      "recall": 0.5,
+      "latency_ms": 6677.0
+    },
+    {
+      "question": "What lifestyle modifications are recommended in treatment plans?",
+      "expected": "Based on the provided clinical notes, the following lifestyle modifications are recommended in treatment plans:\n\n- Regular exercise (Patient: William Gonzalez, MRN: MRN-98556932)\n- Sedentary lifestyle is discouraged (Patient: Tanner Wolf, MRN: MRN-70796144)\n- Moderate alcohol consumption (Patient: William Gonzalez, MRN: MRN-98556932)\n- Avoiding smoking (Patients: Michael Nelson, MRN: MRN-79794025; Karl Peterson, MRN: MRN-10246654; Michael Brown, MRN: MRN-81135064; William Gonzalez, MRN: MRN-98556932)\n- Quitting smoking (Patients: Tanner Wolf, MRN: MRN-70796144; Erin Adams, MRN: MRN-57390405)",
+      "answer": "The provided context does not contain specific information about lifestyle modifications.",
+      "context_len": 693,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.0,
+      "latency_ms": 4593.4
+    },
+    {
+      "question": "What BNP levels are recorded for heart failure patients?",
+      "expected": "There is no information about BNP (B-type Natriuretic Peptide) levels in the provided clinical notes. However, we can identify patients with Congestive Heart Failure (CHF) and their ages:\n\n1. Patient: Dr. Jerry Jenkins MD | Age: 88 | MRN: MRN-74458085\n2. Patient: Andrea Gibson | Age: 48 | MRN: MRN-42350883 (Note: This patient has CHF as a comorbidity, but the primary diagnosis is Major Depressive Disorder.)\n\nWe can also identify patients with Hypothyroidism and their ages:\n\n1. Patient: Gary Hartman | Age: 82 | MRN: MRN-61966201\n2. Patient: Holly Lopez | Age: 80 | MRN: MRN-99151351",
+      "answer": "BNP levels are recorded as follows for heart failure patients:\n\n1. 663 pg/mL\n2. 185 pg/mL\n3. 652 pg/mL\n4. 850 pg/mL",
+      "context_len": 2210,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.5,
+      "latency_ms": 9842.9
+    },
+    {
+      "question": "What procedures are documented in procedure notes?",
+      "expected": "Based on the provided clinical notes, the following procedure is documented in a procedure note:\n\n1. Cardiac catheterization for Osteoarthritis on Patient Heather Frey (MRN: MRN-98996612) on 2025-04-18.",
+      "answer": "The procedures documented in procedure notes are:\n\n1. Procedure for Chronic Obstructive Pulmonary Disease (COPD) - 2026-04-14\n2. Procedure for Hypertension - 2024-08-30\n3. Paracentesis - (no date specified)\n4. Procedure for Osteoarthritis - 2024-09-12\n5. Pulmonary function testing - 2024-09-12\n6. Diagnostic colonoscopy - 2025-09-25\n7. Diagnostic colonoscopy - 2025-12-23\n8. Procedure for Parkinson's Disease - 2025-12-23",
+      "context_len": 1921,
+      "faithfulness": 0.5,
+      "relevancy": 0.9,
+      "recall": 0.0,
+      "latency_ms": 8016.9
+    },
+    {
+      "question": "What allergies are commonly documented in patient records?",
+      "expected": "The following allergies are commonly documented in patient records:\n\n1. Contrast dye (hives) - 2 patients (Barbara Torres and Kevin Higgins)\n2. Lisinopril (angioedema) - 2 patients (Alison Nolan and Tammy Odonnell)\n3. Sulfa drugs (anaphylaxis) - 1 patient (Francisco Jones)\n4. Penicillin (rash) - 1 patient (Anthony Cook)\n5. NSAIDs (GI upset) - 1 patient (Susan Shaffer)",
+      "answer": "Codeine (nausea/vomiting), Sulfa drugs (anaphylaxis), and Contrast dye (hives) are the allergies documented in the patient records.",
+      "context_len": 2310,
+      "faithfulness": 1.0,
+      "relevancy": 0.8,
+      "recall": 0.5,
+      "latency_ms": 8948.3
+    },
+    {
+      "question": "What medications are prescribed alongside insulin for diabetic patients?",
+      "expected": "Based on the provided clinical notes, there is no direct mention of insulin being prescribed for diabetic patients. However, one patient, Dr. Brenda Lopez (MRN: MRN-95119808), is listed as having Type 2 Diabetes Mellitus and is taking Nitroglycerin 0.4mg SL PRN and Calcium carbonate 500mg twice daily. \n\nNitroglycerin is not typically prescribed alongside insulin for diabetic patients. Calcium carbonate is sometimes prescribed to help manage diabetic gastroparesis, but it is not a direct medication prescribed alongside insulin.\n\nHowever, another patient, Tracy Nguyen (MRN: MRN-58557773), is listed as having Chronic Kidney Disease Stage 3 and is not taking any medications directly related to insulin or diabetes management in the provided notes.",
+      "answer": "The provided context does not contain information about medications prescribed alongside insulin. It only mentions adding insulin to the regimen and educating the patient on new medication side effects.",
+      "context_len": 617,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.0,
+      "latency_ms": 2663.6
+    },
+    {
+      "question": "What TSH levels are documented for thyroid patients?",
+      "expected": "There is no TSH level documented for any of the patients in the provided clinical notes. However, one patient, Tiffany Robinson, has a comorbidity of Hypothyroidism, but the TSH level is not mentioned.",
+      "answer": "The TSH levels documented for thyroid patients are:\n\n1. 3.77 mIU/L\n2. 8.45 mIU/L\n3. (No TSH level is documented for the patient in the plan signed by Lisa Wright, PA-C, as the context only mentions ordering a thyroid panel without providing any results.)\n\nAdditionally, the Free T4 levels documented for thyroid patients are:\n\n1. 1.8 ng/dL\n2. 1.3 ng/dL",
+      "context_len": 1707,
+      "faithfulness": 0.8,
+      "relevancy": 0.8,
+      "recall": 0.5,
+      "latency_ms": 7928.1
+    },
+    {
+      "question": "What vital signs are documented for atrial fibrillation patients?",
+      "expected": "There is no information provided about atrial fibrillation patients in the given clinical notes. However, I can provide information about the vital signs documented for patients in general.\n\nThe vital signs documented in the given clinical notes are:\n\n- Blood Pressure (BP): \n  - 133/87 mmHg (Patient: Maria Robinson)\n  - 170/89 mmHg (Patient: Kevin Cantu)\n\n- Heart Rate (HR):\n  - 86 bpm (Patient: Maria Robinson)\n  - 80 bpm (Patient: Kevin Cantu)\n\n- Respiratory Rate (RR):\n  - 15/min (Patient: Kevin Cantu)\n\n- Oxygen Saturation (SpO2):\n  - 97% (Patient: Kevin Cantu)\n\n- Temperature:\n  - Not documented for any patient.",
+      "answer": "The provided context does not contain any information about vital signs for the atrial fibrillation patients.",
+      "context_len": 946,
+      "faithfulness": 1.0,
+      "relevancy": 0.5,
+      "recall": 0.0,
+      "latency_ms": 4638.8
+    },
+    {
+      "question": "What treatment is documented for Alzheimer's Disease patients?",
+      "expected": "There is no documentation of treatment for Alzheimer's Disease patients in the provided clinical notes.",
+      "answer": "The provided context does not contain information about the treatment for Alzheimer's Disease.",
+      "context_len": 2040,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.0,
+      "latency_ms": 8155.4
+    },
+    {
+      "question": "What are common reasons for hospital admission in these records?",
+      "expected": "Based on the provided clinical notes, common reasons for hospital admission include:\n\n1. Decompensated Parkinson's Disease (Patient: Charles Myers)\n2. Acute kidney injury (Patient: Charles Myers)\n3. Obstructive Sleep Apnea (Patient: Joshua Stevens)\n4. Alzheimer's Disease (Patient: Denise Cruz)\n5. Gastroesophageal Reflux Disease (GERD) (Patient: Nicholas Shepherd)\n6. Stroke (Ischemic) (Patient: Meghan Koch)\n7. Coronary Artery Disease (Patient: Kathryn Thompson)\n8. Congestive Heart Failure (CHF) (Patient: Dr. Jerry Jenkins MD)\n\nThese conditions are the primary reasons for hospital admission in the provided clinical notes.",
+      "answer": "The provided context does not contain information about the reasons for hospital admission. It only mentions that hospitalization was considered but deferred.",
+      "context_len": 727,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.0,
+      "latency_ms": 3627.2
+    },
+    {
+      "question": "What medications are prescribed for depression management?",
+      "expected": "Based on the provided clinical notes, the following medications are prescribed for depression management:\n\n- Donepezil 10mg nightly (prescribed for Alzheimer's disease, but also has a mood-stabilizing effect)\n- Semaglutide 0.5mg weekly (prescribed for type 2 diabetes management, but also has a mood-stabilizing effect)\n- No specific antidepressants are mentioned in the provided notes.",
+      "answer": "Escitalopram 10mg daily and Gabapentin 300mg three times daily are prescribed for depression management.",
+      "context_len": 2330,
+      "faithfulness": 0.5,
+      "relevancy": 0.8,
+      "recall": 0.5,
+      "latency_ms": 10759.4
+    },
+    {
+      "question": "What DEXA scan findings are documented for osteoporosis patients?",
+      "expected": "There are no DEXA scan findings documented for osteoporosis patients in the provided clinical notes.",
+      "answer": "The DEXA scan findings for osteoporosis patients are as follows:\n\n- T-score -2.6 at lumbar spine, consistent with osteoporosis.",
+      "context_len": 1515,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.5,
+      "latency_ms": 5651.9
+    },
+    {
+      "question": "What exercise habits are mentioned in patient social histories?",
+      "expected": "Regular exercise is mentioned in the social histories of the following patients:\n\n1. Paul Porter (Procedure Note - 2025-11-19) - Regular exercise.\n2. Eric Hayes (Procedure Note - 2025-05-30) - Regular exercise.\n3. Kevin Peters (Urgent Visit Note - 2024-09-22) - Occasional exercise is not explicitly mentioned, but it is stated that he is a retired teacher, which may imply a sedentary lifestyle, but he is also described as a \"never smoker\", which could suggest some level of physical activity.",
+      "answer": "Regular exercise is mentioned in two social histories. \n\n1. Never smoker. Moderate alcohol (2-3 drinks/week). Regular exercise. \n2. Never smoker. Moderate alcohol (2-3 drinks/week). Regular exercise.",
+      "context_len": 1935,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.5,
+      "latency_ms": 6695.2
+    },
+    {
+      "question": "What MRI brain findings are documented for neurological patients?",
+      "expected": "There are no MRI brain findings documented for any of the patients in the provided clinical notes.",
+      "answer": "Scattered white matter changes, no acute infarct.",
+      "context_len": 1284,
+      "faithfulness": 0.5,
+      "relevancy": 0.8,
+      "recall": 0.0,
+      "latency_ms": 4464.8
+    },
+    {
+      "question": "What medications are used for COPD management?",
+      "expected": "Based on the clinical notes, the following medications are used for COPD management:\n\n1. Tiotropium inhaler 18mcg daily (Patient: Jennifer Hernandez, MRN: MRN-73784121)\n2. Colchicine 0.6mg twice daily (Patient: Marilyn Roth, MRN: MRN-06660003)\n3. Donepezil 10mg nightly (Patient: John Ross, MRN: MRN-58433798) - Note: Donepezil is primarily used for Alzheimer's disease, but it is also used for COPD management in some cases.\n4. Furosemide 20mg daily (Patient: John Ross, MRN: MRN-58433798) - Note: Furosemide is primarily used for heart failure and edema, but it is also used for COPD management in some cases.\n\nHowever, the most commonly used medications for COPD management are:\n\n1. Tiotropium",
+      "answer": "The medications used for COPD management are:\n\n1. Albuterol inhaler (2 puffs PRN)\n2. Montelukast (10mg nightly)\n3. Colchicine (0.6mg twice daily)",
+      "context_len": 2416,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.5,
+      "latency_ms": 8882.7
+    },
+    {
+      "question": "What are the documented treatment plans for anxiety disorders?",
+      "expected": "Based on the provided clinical notes, the documented treatment plans for anxiety disorders are:\n\n- Escitalopram 10mg daily (Patient: John Bowen, MRN: MRN-26809498, Follow-Up Note - 2026-01-29)\n \nThere is only one documented treatment plan for anxiety disorders in the provided notes.",
+      "answer": "The documented treatment plans for anxiety disorders are as follows:\n\n1. For stable Generalized Anxiety Disorder:\n- Continue current medications\n- Reinforce lifestyle modifications\n- Follow-up in 4 weeks\n\n2. For well-controlled Generalized Anxiety Disorder:\n- Increase Calcium dose\n- Repeat labs in 2 weeks\n- Patient educated on signs of toxicity\n\n3. For poorly controlled Generalized Anxiety Disorder:\n- Continue current medications\n- Reinforce lifestyle modifications\n- Follow-up in either 8 weeks or 12 weeks (plans vary among providers)",
+      "context_len": 1006,
+      "faithfulness": 0.8,
+      "relevancy": 0.8,
+      "recall": 0.0,
+      "latency_ms": 4054.4
+    },
+    {
+      "question": "What abdominal ultrasound findings are documented?",
+      "expected": "There are no abdominal ultrasound findings documented in the provided clinical notes.",
+      "answer": "The abdominal ultrasound findings documented are: \n\n1. Hepatic steatosis\n2. No focal lesions",
+      "context_len": 1307,
+      "faithfulness": 1.0,
+      "relevancy": 0.8,
+      "recall": 0.0,
+      "latency_ms": 5527.8
+    },
+    {
+      "question": "What calcium and vitamin D doses are prescribed?",
+      "expected": "Based on the provided clinical notes, the following calcium and vitamin D doses are prescribed:\n\n- Vitamin D3: 2000 IU daily (prescribed to David Rogers, MRN: MRN-13838824)\n- Calcium is not explicitly mentioned in the provided notes.",
+      "answer": "Calcium carbonate 500mg twice daily and Vitamin D3 2000 IU daily.",
+      "context_len": 2338,
+      "faithfulness": 0.5,
+      "relevancy": 1.0,
+      "recall": 0.8,
+      "latency_ms": 9729.5
+    },
+    {
+      "question": "What stress test results are documented for cardiac patients?",
+      "expected": "Unfortunately, there are no stress test results documented for cardiac patients in the provided clinical notes.",
+      "answer": "The stress test results are documented as \"No inducible ischemia at 85% max heart rate\" for all cardiac patients.",
+      "context_len": 1387,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.0,
+      "latency_ms": 5716.1
+    },
+    {
+      "question": "What medications are prescribed for thyroid conditions?",
+      "expected": "There are no medications prescribed for thyroid conditions in the provided clinical notes.",
+      "answer": "Levothyroxine is prescribed for thyroid conditions. The doses have varied: 50mcg daily initially, then increased to 100mcg daily.",
+      "context_len": 2286,
+      "faithfulness": 0.8,
+      "relevancy": 0.5,
+      "recall": 0.5,
+      "latency_ms": 9831.3
+    },
+    {
+      "question": "What troponin levels are documented in urgent visit notes?",
+      "expected": "There are no troponin levels documented in the urgent visit notes provided.",
+      "answer": "Two troponin levels are documented in the urgent visit notes: \n\n1. 0.015 ng/mL\n2. 0.024 ng/mL",
+      "context_len": 1757,
+      "faithfulness": 1.0,
+      "relevancy": 0.8,
+      "recall": 0.0,
+      "latency_ms": 7127.8
+    },
+    {
+      "question": "What social history details are documented for patients with COPD?",
+      "expected": "There is no patient with a documented diagnosis of COPD in the provided clinical notes. However, there is a patient with a diagnosis of Asthma (Lawrence Robertson) and another with a diagnosis of Peripheral Artery Disease (Victor Watkins) and a patient with a diagnosis of Congestive Heart Failure (CHF) (Joy Mccoy, Gina Solis). \n\nFor patients with Asthma (Lawrence Robertson) and Peripheral Artery Disease (Victor Watkins), the following social history details are documented:\n\n- Never smoker\n- Denies alcohol or illicit drug use\n- Works as engineer",
+      "answer": "The provided context contains the following social history details for patients with COPD:\n\n1. Active smoker, 1 PPD x 30 years.\n2. Never smoker.\n3. Never smoker.\n4. Never smoker.\n5. Active smoker 0.5 PPD.\n6. Social alcohol use.\n7. Occasional alcohol use.\n8. Denies alcohol or illicit drug use.\n9. Denies alcohol or illicit drug use.\n10. History of alcohol use disorder, currently sober x 2 years.\n11. Works as engineer.\n12. Works as engineer.\n13. Retired teacher.",
+      "context_len": 1921,
+      "faithfulness": 0.5,
+      "relevancy": 0.8,
+      "recall": 0.0,
+      "latency_ms": 5846.0
+    },
+    {
+      "question": "What follow-up plans are documented for post-discharge patients?",
+      "expected": "Based on the provided clinical notes, the following follow-up plans are documented for post-discharge patients:\n\n- For Mary Cooper (MRN: MRN-79292463), a follow-up is planned for Hyperthyroidism, with no significant change reported since the last visit. Medication adherence is confirmed, and no new symptoms are denied. \n- For Jonathan Anderson (MRN: MRN-67697514), a follow-up is planned for Generalized Anxiety Disorder, with no significant change reported since the last visit. Occasional missed doses are reported, but no new symptoms are denied.\n- For Carol Hunt (MRN: MRN-72867648), a follow-up is planned for Chronic Kidney Disease Stage 3, with improvement reported since the last visit. Occasional missed doses are reported, but no new symptoms are denied.",
+      "answer": "Follow-up in 1 day is documented for post-discharge patients.",
+      "context_len": 726,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.0,
+      "latency_ms": 4692.4
+    },
+    {
+      "question": "What medication doses are adjusted during follow-up visits?",
+      "expected": "Based on the provided clinical notes, the following medication doses are adjusted during follow-up visits:\n\n1. Patient: Leroy Colon (MRN: MRN-26371179) - No specific medication dose adjustment mentioned in the follow-up note.\n2. Patient: Jasmine Freeman (MRN: MRN-21614916) - No specific medication dose adjustment mentioned in the follow-up note.\n3. Patient: Mary Carter (MRN: MRN-69002773) - No specific medication dose adjustment mentioned in the discharge summary, but the medication list is incomplete.\n\nHowever, the following medication doses are mentioned in the notes, but it's unclear if they were adjusted during follow-up visits:\n\n1. Patient: Pam Newton (MRN: MRN-38514639) - Levothyroxine 50mcg daily and Levothyroxine 100mcg daily (it's unclear if these doses were adjusted).\n2. Patient: Sarah Hill DVM (MRN",
+      "answer": "The provided context does not contain information about medication dose adjustments during follow-up visits.",
+      "context_len": 2035,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.0,
+      "latency_ms": 8645.5
+    },
+    {
+      "question": "What are the documented vital signs for patients with diabetes?",
+      "expected": "There are no documented vital signs for patients with diabetes in the provided clinical notes. However, there are some medication lists and patient information that may be relevant to diabetes management.\n\nPatient Logan Jackson (MRN: MRN-04213486) has a medication list that includes Empagliflozin 10mg daily, which is a medication used to treat type 2 diabetes. However, there are no documented vital signs for this patient.\n\nPatient Margaret Roberts (MRN: MRN-89576388) has a medication list that includes Amlodipine 10mg daily, but there is no indication of diabetes.",
+      "answer": "The provided context does not contain documented vital signs for patients with diabetes.",
+      "context_len": 1592,
+      "faithfulness": 0.0,
+      "relevancy": 0.5,
+      "recall": 0.5,
+      "latency_ms": 5703.6
+    },
+    {
+      "question": "What imaging is ordered for patients with peripheral artery disease?",
+      "expected": "There is no mention of patients with peripheral artery disease in the provided clinical notes. However, there is a mention of patients with Coronary Artery Disease and Stroke (Ischemic). \n\nFor patients with Coronary Artery Disease, the notes do not specify any imaging ordered for peripheral artery disease. \n\nFor patients with Stroke (Ischemic), the notes do not specify any imaging ordered for peripheral artery disease. However, one patient (Belinda Shepherd) is undergoing a procedure for Stroke (Ischemic) and has a history of smoking, which is a risk factor for peripheral artery disease.",
+      "answer": "For patients with peripheral artery disease, the following imaging is ordered:\n\n- Renal ultrasound (ordered by James Alvarado, DO, for a patient with well-controlled peripheral artery disease and ischemic stroke)\n- Echocardiogram (ordered by Jason Gilmore, MD, for a patient with stable peripheral artery disease)",
+      "context_len": 1432,
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "recall": 0.8,
+      "latency_ms": 5912.4
+    }
+  ]
+}
