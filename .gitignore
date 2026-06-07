@@ -32,3 +32,4 @@ mlruns/
 
 # Streamlit
 .streamlit/
+._*
