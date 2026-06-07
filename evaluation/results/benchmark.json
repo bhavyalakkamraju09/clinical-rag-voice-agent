@@ -1,0 +1,16 @@
+{
+  "bm25": {
+    "p_at_5": 1.0,
+    "avg_latency_ms": 27.1
+  },
+  "faiss": {
+    "p_at_5": 1.0,
+    "avg_latency_ms": 19.1
+  },
+  "hybrid": {
+    "p_at_5": 1.0,
+    "avg_latency_ms": 40.6
+  },
+  "hybrid_vs_bm25_pct": 0.0,
+  "hybrid_vs_faiss_pct": 0.0
+}

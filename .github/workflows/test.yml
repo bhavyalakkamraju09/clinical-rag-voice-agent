@@ -1,0 +1,76 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.11"
+
+    - name: Cache pip
+      uses: actions/cache@v4
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+
+    - name: Install core dependencies
+      run: |
+        pip install faker numpy rank-bm25 sentence-transformers faiss-cpu \
+                    langchain-text-splitters python-dotenv pytest
+
+    - name: Test synthetic data generation
+      run: |
+        python data/synthetic/generate_synthetic_notes.py
+        python -c "
+        import json
+        with open('data/raw/clinical_notes.json') as f:
+            notes = json.load(f)
+        assert len(notes) == 10000, f'Expected 10000 notes, got {len(notes)}'
+        assert 'note' in notes[0], 'Missing note field'
+        assert 'primary_condition' in notes[0], 'Missing condition field'
+        print(f'✓ {len(notes)} notes generated successfully')
+        "
+
+    - name: Test chunking
+      run: |
+        python -c "
+        import json, sys
+        sys.path.insert(0, '.')
+        from src.ingestion.chunker import chunk_notes
+        with open('data/raw/clinical_notes.json') as f:
+            notes = json.load(f)
+        chunks = chunk_notes(notes[:100])
+        assert len(chunks) > 100, f'Expected >100 chunks, got {len(chunks)}'
+        assert 'text' in chunks[0], 'Missing text field'
+        print(f'✓ {len(chunks)} chunks from 100 notes')
+        "
+
+    - name: Test PHI redaction
+      run: |
+        pip install presidio-analyzer presidio-anonymizer spacy
+        python -m spacy download en_core_web_lg
+        python -c "
+        import sys
+        sys.path.insert(0, '.')
+        from src.compliance.phi_redactor import redact_phi
+        test_text = 'Patient John Smith, DOB 1965-03-15, visited on 2024-01-10.'
+        redacted = redact_phi(test_text)
+        assert 'John Smith' not in redacted, 'Name not redacted'
+        print(f'✓ PHI redaction working: {redacted}')
+        "
+
+    - name: Lint check
+      run: |
+        pip install flake8
+        flake8 src/ --max-line-length=120 --ignore=E501,W503,E402 --count
