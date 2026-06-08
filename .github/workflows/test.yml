@@ -73,8 +73,8 @@ jobs:
     - name: Lint check
       run: |
         pip install flake8
-        # Exclude macOS metadata files and check only real Python files
+        # Remove macOS metadata files before linting
+        find src/ -name "._*" -delete
         flake8 src/ --max-line-length=120 \
           --ignore=E501,W503,E402,E241,E221,E302,E128,E124,F401,F841,F811,F541 \
-          --exclude="src/.*" \
           --count
